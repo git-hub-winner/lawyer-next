@@ -54,9 +54,9 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.39 0.08 242);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.93 0.02 240);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -124,7 +124,7 @@
     font-family: var(--font-dm-sans);
   }
   .container {
-    @apply mx-auto px-4;
+    @apply mx-auto max-w-360 px-4 xl:px-21;
   }
   h1,
   h2,

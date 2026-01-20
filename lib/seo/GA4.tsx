@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 
-export const GoogleAnalytics = () => {
+export const GA4 = () => {
   return (
     <>
       <Script

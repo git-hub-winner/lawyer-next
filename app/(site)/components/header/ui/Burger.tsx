@@ -1,4 +1,7 @@
+"use client";
+
 import { Scale } from "lucide-react";
+import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,8 +19,10 @@ import { NavitagtionLinks } from "../mocks/mocks";
 import { NavigationLink } from "./NavigationLink";
 
 export function Burger() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button className="flex lg:hidden" variant="outline">
           <Scale className="size-4 shrink-0" />
@@ -35,8 +40,9 @@ export function Burger() {
             {NavitagtionLinks.map(el => (
               <NavigationLink
                 key={el}
-                to={`#${el}`}
+                to={el}
                 text={el.charAt(0).toUpperCase() + el.slice(1)}
+                onClick={() => setOpen(false)}
               />
             ))}
           </div>

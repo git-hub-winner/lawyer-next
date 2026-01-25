@@ -124,7 +124,7 @@
     font-family: var(--font-dm-sans);
   }
   .container {
-    @apply mx-auto max-w-360 px-4 xl:px-21;
+    @apply mx-auto max-w-360! px-4 xl:px-21;
   }
   h1,
   h2,

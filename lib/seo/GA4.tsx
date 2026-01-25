@@ -1,13 +1,14 @@
 "use client";
 
 import Script from "next/script";
+import { GOOGLE_ANALYTICS_ID } from "../config";
 
 export const GA4 = () => {
   return (
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-N2KV7LWE10`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
       />
       <Script
         id="google-analytics"
@@ -17,7 +18,7 @@ export const GA4 = () => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-N2KV7LWE10');
+            gtag('config', '${GOOGLE_ANALYTICS_ID}');
           `,
         }}
       />

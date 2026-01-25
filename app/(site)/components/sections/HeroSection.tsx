@@ -4,7 +4,7 @@ import { ContactButton } from "../ui/ContactButton";
 
 export const HeroSection = () => {
   return (
-    <section className="bg-secondary relative grid grid-cols-1 items-center gap-0 overflow-hidden lg:mb-40 lg:grid-cols-6 lg:gap-10">
+    <section className="bg-secondary relative mb-15 grid grid-cols-1 items-center gap-0 overflow-hidden lg:mb-40 lg:grid-cols-6 lg:gap-10">
       <div className="relative col-span-3 flex w-full flex-col gap-8 px-4 py-15 lg:py-0 xl:col-span-4 xl:px-21">
         <Image
           src="/dots.webp"

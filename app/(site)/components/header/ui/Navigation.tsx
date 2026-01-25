@@ -7,7 +7,7 @@ export const Navigation = () => {
       {NavitagtionLinks.map(link => (
         <NavigationLink
           key={link}
-          to={`#${link}`}
+          to={`${link}`}
           text={link.charAt(0).toUpperCase() + link.slice(1)}
         />
       ))}

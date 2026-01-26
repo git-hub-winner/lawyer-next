@@ -1,10 +1,13 @@
-import { Metadata } from "next";
-import { homePageSeo } from "./(site)/seo/home";
 import "./globals.css";
 
+import { Metadata } from "next";
 import { DM_Sans, DM_Serif_Text } from "next/font/google";
-import { McKinleyLawJsonLd } from "@/lib/seo/jsonld";
 import Script from "next/script";
+
+import { GA4 } from "@/lib/seo/GA4";
+import { McKinleyLawJsonLd } from "@/lib/seo/jsonld";
+
+import { homePageSeo } from "./(site)/seo/home";
 
 export const metadata: Metadata = homePageSeo;
 
@@ -38,6 +41,8 @@ export default function RootLayout({ children }: RootProps) {
             __html: JSON.stringify(McKinleyLawJsonLd),
           }}
         />
+
+        <GA4 />
       </body>
     </html>
   );

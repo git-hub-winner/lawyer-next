@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+
 import { GOOGLE_ANALYTICS_ID } from "../config";
 
 export const GA4 = () => {
